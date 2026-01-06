@@ -1,0 +1,59 @@
+#About {
+  padding: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#About h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-section h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+  padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.about-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;  /* Extends 2x the heading width */
+  height: 3px;
+  background: linear-gradient(to right, #667eea 0%, #667eea 30%, transparent 100%);
+}
+
+.about-section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #About {
+    padding: 30px 15px;
+  }
+
+  .about-section h3 {
+    font-size: 1.5em;
+  }
+
+  .about-section p {
+    font-size: 1em;
+  }
+}
+

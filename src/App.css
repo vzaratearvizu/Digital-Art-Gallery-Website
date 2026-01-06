@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  transition: opacity 0.3s;
+}
+
+.logo img {
+  height: 41px;  /* Adjust this to make your logo bigger/smaller */
+  width: auto;
+  display: block;
+  margin-left: -20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  list-style: none; /* Add this */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+  display: inline-block; /* Add this */
+}
+
+.nav-links a:hover {
+  color: #E4405F;
+}
+
+/* Underline animation - expands from center */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;                    /* Start from center */
+  transform: translateX(-50%);  /* Center the line */
+  width: 0;
+  height: 2px;
+  background-color: #E4405F;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Add padding to App content so nav doesn't cover it */
+.App {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 30px;
+  margin: 0;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  color: #E4405F;
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .social-links {
+    gap: 20px;
+  }
+  
+  .social-links a {
+    font-size: 0.9em;
+  }
+}
