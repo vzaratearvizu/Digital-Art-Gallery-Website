@@ -1,6 +1,6 @@
 # AwsomChry Website
 
-Website connecting all my social media accounts while showcasing my artworks.
+Connecting my online artwork in one place.
 
 ## Features
 - Reponsive grid for animations and illustrations
