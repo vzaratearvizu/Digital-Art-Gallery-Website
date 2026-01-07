@@ -22,6 +22,3 @@ This project is licensed under the MIT License. While all the code is open sourc
 - Home page design unreleased art
 - Analytics Tracking ID
 - Add buttons to X on Illustrations
-
-## Contacts
-- Email: 
