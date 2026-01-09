@@ -1,4 +1,4 @@
-# AwsomChry Website
+# Portfolio Website
 
 Connecting my online artwork in one place.
 
