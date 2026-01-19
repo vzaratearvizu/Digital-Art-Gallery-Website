@@ -7,8 +7,8 @@ function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Hi, I'm AwsomChry</h1>
-          <p>Pixel Artist & Animator creating music-inspired artwork</p>
+          <h1>Welcome</h1>
+          <p>Pixel art and animation portfolio</p>
           <div className="hero-buttons">
             <Link to="/animations" className="btn">View Animations</Link>
             <Link to="/illustrations" className="btn">See Illustrations</Link>
