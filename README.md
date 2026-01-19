@@ -1,4 +1,4 @@
-# AwsomChry Website
+# Digital Art Gallery Website
 
 Connecting my online artwork in one place.
 
